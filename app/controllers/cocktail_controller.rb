@@ -42,7 +42,7 @@ class CocktailController < ApplicationController
             elsif @mix%2===0
                 "カルーアミルク"
             elsif @mix%5===0
-                ""
+                "青い珊瑚礁"
             elsif @mix%3===0
                 "アレキサンダー"
             else
