@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    background-color: #ffc0cb;
+    color: #00bfff;
+    font-size: 20px;
+    font-weight: bold;
+}
+h3 {
+    margin-top: 0px;
+     font-weight: normal;
+}
+
+.description {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.make {
+    text-align: center;
+}
+
+.cp {
+    width: 150px;
+    height: 50px;
+    background-color: #00bfff;
+    font-size: large;
+}
+
+#x {
+    margin: 10px;
+}
+
+.couple {
+    display: inline-block;
+}
+
+input {
+    background-color: #00bfff;
+    font-weight: bold;
+    color: white;
+}
+
+.cp:hover  {
+    background-color: #ff00ff;
+}
+
+input:active {
+     background-color: #ff00ff;
+}
+
+a:active {
+     background-color: #ff00ff;
+}
+
+.submit {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.go {
+    background-color: #e6ffb5;
+    color: #332426;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #332426;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.result {
+    color: #00394d;
+    font-size: 30px;
+    margin: 10px;
+}
