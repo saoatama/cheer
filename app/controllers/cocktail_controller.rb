@@ -32,8 +32,8 @@ class CocktailController < ApplicationController
             end
         elsif @active < @pass
             if @mix%10===0
-                ""
-            elsif @mix > 100
+                "ピンクレディ"
+            elsif @mix >= 100
                 "ビトウィーン・ザ・シーツ"
             elsif @mix%6===0
                 "ルシアン"
