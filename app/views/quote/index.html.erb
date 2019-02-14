@@ -1,0 +1,31 @@
+<div class="input-form">
+<%= form_tag(quote_path, :method => 'post' ) do %>
+     <div class="input-ind"><label for="title">タイトル</label><%= text_field_tag :title, '', class: 'input-text' %></div>
+     <div class="input-ind"><label for="name">著者名　</label><%= text_field_tag :name, '', class: 'input-text' %></div>
+     <div class="input-ind"><label for="year">出版年　</label><%= text_field_tag :year, '', class: 'input-text' %></div>
+     <div class="input-ind"><label for="publisher">出版社　</label><%= text_field_tag :publisher, '', class: 'input-text' %></div>
+     <%= button_tag '書誌情報を整形する', class: 'shaping' %>
+ <% end %>
+ 
+ <div class="result-block">
+     <% unless params[:name].nil? %>
+     <%= text_area_tag :result, @result %>
+     <%= button_tag 'テキストをコピー', class: 'copy-source' %>
+     </div>
+     
+    <% end %>
+ </div>
+ 
+ 
+<script>
+ $('document').ready(()=>{
+  $('.go-menu').on('click', (event) => {
+      $('.link-list').toggle();
+  })
+  $('.copy-source').on("click",function(){
+ $("textarea").select();
+ document.execCommand('copy');
+ alert("コピー完了");
+});
+ })
+</script>

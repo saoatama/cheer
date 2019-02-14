@@ -1,0 +1,113 @@
+// Place all the styles related to the quote controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+header {
+    height: 10px;
+    font-size: 6px;
+    font-family: 'メイリオ';
+    background-color: #fffff0;
+}
+
+.link-list {
+    background-color: #bfbfbf;
+    width: 12%;
+    margin-top: -0.5%;
+    margin-left: -0.5%;
+    padding: 1%;
+    list-style: none;
+    display: none;
+}
+
+.go-menu {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 30px;
+    background-color: #4E8999;
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+
+.header-title {
+    overflow: hidden;
+}
+
+hr {
+    margin-left: -0.5%;
+    box-shadow:5px 5px 6px;
+    border:1px solid #000;
+}
+
+main {
+    background-color: #fffff0;
+    font-size: 30px;
+    font-family: 'メイリオ';
+}
+
+.input-form {
+    margin: 5% 10% 2% 10%;
+    padding: 1% 0% 5% 1%;
+    background-color: #2F535D;
+    border-radius: 10px;
+}
+
+label {
+    padding-right: 10%;
+    font-weight: bold;
+    color: #FFFFF0;
+}
+
+.input-ind {
+    margin-left: 15%;
+    display: block;
+}
+.input-text {
+    margin: 2%;
+    width: 50%;
+    height: 30px;
+}
+
+.shaping {
+    background-color: #4E8999;
+    color: #fffff0;
+    font-family: 'メイリオ';
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0.5%;
+    margin: 1% 10% 1% 35%;
+    cursor: pointer;
+}
+
+#result {
+    background-color: #fffff0;
+    border-radius: 10px;
+    width: 60%;
+    height: 30px;
+    font-size: 20px;
+    margin: 0.5% 1% 0.5% 0.5%;
+    padding: 0% 1% 0% 1%;
+    word-wrap: break-word;
+    float: left;
+}
+
+.copy-source {
+    background-color: #4E8999;
+    color: #fffff0;
+    font-family: 'メイリオ';
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result-block {
+    margin-top: 2%;
+    margin-left: 10%;
+}
