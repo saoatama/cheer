@@ -48,4 +48,15 @@
   <%= submit_tag '推しのカクテルを作る' %>
  </div>
 
+
+<script>
+ $('document').ready(()=>{
+  $('option').on('mouseenter', (event)=>{
+   $(event.currentTarget).addClass('spot');
+  })
+  $('option').on('mouseleave', (event) => {
+   $(event.currentTarget).remove('spot');
+  })
+ })
+</script>
 <% end %>
