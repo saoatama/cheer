@@ -10,7 +10,7 @@ class QuoteController < ApplicationController
     end
     
     def translation
-        @result = "#{params[:author]}(#{params[:translator]})『#{params[:title]}』(#{params[:publisher]}, #{params[:year]}) 。"
+        @result = "#{params[:author]}(#{params[:translator]}訳)『#{params[:title]}』(#{params[:publisher]}, #{params[:year]}) 。"
 
     end
 end

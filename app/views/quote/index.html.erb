@@ -16,7 +16,7 @@
  
  <div class="result-block">
      <% unless params[:name].nil? %>
-     <% if params[:subtitle].nil? %>
+     <% if params[:subtitle].empty? %>
      <%= text_area_tag :result, @result %>
      <% else %>
      <%= text_area_tag :result, @result2 %>
@@ -30,6 +30,12 @@
  
 <script>
  $('document').ready(()=>{
+  $('.header-title').on('mouseenter', (event)=>{
+   $('.header-description').show();
+   $(this).on('mouseleave', ()=>{
+    $('.header-description').hide();
+   })
+  })
   $('.go-menu').on('click', (event) => {
       $('.link-list').toggle();
   })

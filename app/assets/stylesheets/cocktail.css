@@ -1,27 +1,71 @@
 body {
     font-family: sans-serif, 'メイリオ';
     background-color: #ffc0cb;
-    color: #00bfff;
+    color: #fff0f5;
     font-size: 20px;
     font-weight: bold;
 }
-h3 {
-    margin-top: 0px;
-     font-weight: normal;
+
+.jump_to:active {
+    background-color: #f0f8ff;
 }
 
-.description {
-    font-weight: normal;
-    font-size: 16px;
+.link-list {
+    background-color: #f0f8ff;
+    width: 12%;
+   margin-top: -0.5%;
+    margin-left: -0.5%;
+    padding: 1%;
+    list-style: none;
+    display: none;
+    border:1px solid #e6e6fa;
+    float: left;
 }
 
-.make {
-    text-align: center;
+.jump_to {
+    font-size: 80%;
+    text-decoration: none;
+    color: #00bfff;
+}
+
+.go-menu {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 5%;
+    margin-right: 0.6%;
+    background-color: #4E8999;
+    width: 25px;
+    height: 25px;
+    transform: rotate(40deg);
+    float: left;
+}
+
+.header_title {
+    float: left;
+}
+
+.header_description {
+    font-size: 75%;
+    margin-left: 12%;
+    margin-bottom: -0.5%;
+    margin-top: -1%;
+}
+
+hr {
+    margin-left: -0.5%;
+    box-shadow:5px 5px 6px;
+    border:1px solid #000;
 }
 
 .cp {
-    width: 150px;
-    height: 50px;
+    width: 60%;
+    height: 30%;
     background-color: #00bfff;
     font-size: large;
 }
@@ -53,8 +97,11 @@ a:active {
 }
 
 .submit {
-    margin-top: 10px;
-    text-align: center;
+    margin-left: 10%;
+}
+
+.finish {
+    margin-left: 20%;
 }
 
 .go {
@@ -64,8 +111,8 @@ a:active {
     border-width: 1px;
     border-color: #332426;
     border-radius: 10px;
-    padding: 5px;
-    margin: 20px;
+    padding: 1%;
+    margin: -10% 0% 0% 3%;
     font-size: 16px;
     text-decoration: none;
 }
@@ -73,5 +120,5 @@ a:active {
 .result {
     color: #00394d;
     font-size: 30px;
-    margin: 10px;
+    margin: 5% 0% 5% 5%;
 }

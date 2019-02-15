@@ -3,19 +3,32 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 header {
     font-family: 'メイリオ';
+    color: #1a0000
 }
 
 nav {
 }
 
 .link-list {
-    background-color: #bfbfbf;
+    background-color: #f5f5f5;
     width: 12%;
     margin-top: -0.5%;
     margin-left: -0.5%;
     padding: 1%;
     list-style: none;
     display: none;
+    box-shadow:5px 5px 6px;
+    border:1px solid #000;
+}
+
+.jump_to {
+    font-size: nomal;
+    text-decoration: none;
+    color: #1a0000;
+}
+
+.jump_to:active{
+     background-color: #f5f5f5;
 }
 
 .go-menu {
@@ -27,15 +40,21 @@ nav {
 }
 
 .logo {
-    margin-left: 30px;
+    margin-left: 5%;
+    margin-right: 0.6%;
     background-color: #4E8999;
     width: 25px;
     height: 25px;
+      transform: rotate(40deg);
     float: left;
 }
 
-.header-title {
-    overflow: hidden;
+.header-description {
+    font-size: 75%;
+    margin-left: 12%;
+    margin-bottom: -0.5%;
+    margin-top: -1%;
+    display: none;
 }
 
 hr {
@@ -47,6 +66,7 @@ hr {
 main {
     font-size: 30px;
     font-family: 'メイリオ';
+    color: #1a0000;
 }
 
 .which-title {

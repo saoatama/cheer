@@ -1,10 +1,4 @@
-<div class="make">
- <h2>推しCPカクテルメーカー</h2>
- <p class="description">この診断メーカーでは貴方の推しCPカクテルを作ることができます。<br>今後やる気が続けば毎日の晩酌に日替わりカクテルになるようにします。</p>
-</div>
-
 <%= form_tag({controller: :cocktail, action: :post}, id: :fm, class: :finish) do %>
-<div class="make">
 <div class="couple">
  <label for="finish">攻めの誕生月</label>
      <select name="active" class="cp">
@@ -42,7 +36,6 @@
          <option value=12>12月</option>
      </select>
  </div>
- </div>
  <br>
  <div class="submit">
   <%= submit_tag '推しのカクテルを作る' %>
@@ -56,6 +49,9 @@
   })
   $('option').on('mouseleave', (event) => {
    $(event.currentTarget).removeClass('spot');
+  })
+  $('.go-menu').on('click', (event) => {
+      $('.link-list').toggle();
   })
  })
 </script>

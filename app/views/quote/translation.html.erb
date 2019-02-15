@@ -20,6 +20,12 @@
  
 <script>
  $('document').ready(()=>{
+  $('.header-title').on('mouseenter', (event)=>{
+   $('.header-description').show();
+   $(this).on('mouseleave', ()=>{
+    $('.header-description').hide();
+   })
+  })
   $('.go-menu').on('click', (event) => {
       $('.link-list').toggle();
   })
