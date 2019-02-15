@@ -2,10 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 header {
-    height: 10px;
-    font-size: 6px;
     font-family: 'メイリオ';
-    background-color: #fffff0;
+}
+
+nav {
 }
 
 .link-list {
@@ -45,9 +45,27 @@ hr {
 }
 
 main {
-    background-color: #fffff0;
     font-size: 30px;
     font-family: 'メイリオ';
+}
+
+.which-title {
+    font-size: 20px;
+    color: #151A1C;
+}
+
+.which {
+    background-color: #bfbfbf;
+    color: #fffff0;
+    width: 20%;
+    height: 30px;
+    cursor: pointer;
+    margin-left: -10%;
+}
+
+.which-box {
+    margin-bottom: -4%;
+    margin-left: 5%;
 }
 
 .input-form {
@@ -59,7 +77,6 @@ main {
 
 label {
     padding-right: 10%;
-    font-weight: bold;
     color: #FFFFF0;
 }
 
@@ -73,31 +90,7 @@ label {
     height: 30px;
 }
 
-.shaping {
-    background-color: #4E8999;
-    color: #fffff0;
-    font-family: 'メイリオ';
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 0.5%;
-    margin: 1% 10% 1% 35%;
-    cursor: pointer;
-}
-
-#result {
-    background-color: #fffff0;
-    border-radius: 10px;
-    width: 60%;
-    height: 30px;
-    font-size: 20px;
-    margin: 0.5% 1% 0.5% 0.5%;
-    padding: 0% 1% 0% 1%;
-    word-wrap: break-word;
-    float: left;
-}
-
-.copy-source {
+button {
     background-color: #4E8999;
     color: #fffff0;
     font-family: 'メイリオ';
@@ -107,7 +100,27 @@ label {
     cursor: pointer;
 }
 
+.shaping {
+    padding: 0.5%;
+    margin: 1% 10% 1% 35%;
+}
+
+#result {
+    background-color: #fffff0;
+    border-radius: 10px;
+    width: 60%;
+    font-size: 20px;
+    margin: 0.5% 1% 0.5% 0.5%;
+    padding: 0% 1% 0% 1%;
+    word-wrap: break-word;
+    float: left;
+}
+
 .result-block {
     margin-top: 2%;
     margin-left: 10%;
+}
+
+.refresh {
+    display: none;
 }

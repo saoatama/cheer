@@ -1,14 +1,15 @@
 <div class="input-form">
-<%= form_tag(quote_book_path, :method => 'post' ) do %>
+<%= form_tag(quote_translation_path, :method => 'post' ) do %>
      <div class="input-ind"><label for="title">タイトル</label><%= text_field_tag :title, '', class: 'input-text' %></div>
-     <div class="input-ind"><label for="name">著者名　</label><%= text_field_tag :name, '', class: 'input-text' %></div>
+     <div class="input-ind"><label for="title">著者名　</label><%= text_field_tag :author, '', class: 'input-text' %></div>
+     <div class="input-ind"><label for="name">訳者名　</label><%= text_field_tag :translator, '', class: 'input-text' %></div>
      <div class="input-ind"><label for="year">出版年　</label><%= text_field_tag :year, '', class: 'input-text' %></div>
      <div class="input-ind"><label for="publisher">出版社　</label><%= text_field_tag :publisher, '', class: 'input-text' %></div>
      <%= button_tag '書誌情報を整形する', class: 'shaping' %>
  <% end %>
  
  <div class="result-block">
-     <% unless params[:name].nil? %>
+     <% unless params[:year].nil? %>
      <%= text_area_tag :result, @result %>
      <%= button_tag 'テキストをコピー', class: 'copy-source' %>
      </div>
