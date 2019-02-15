@@ -1,6 +1,8 @@
 class QuoteController < ApplicationController
     def index
         @result = "#{params[:name]}『#{params[:title]}』(#{params[:publisher]}, #{params[:year]}) 。"
+        @result2 = "#{params[:name]}『#{params[:title]}ー#{params[:subtitle]}』(#{params[:publisher]}, #{params[:year]}) 。"
+
     end
     
     def essay

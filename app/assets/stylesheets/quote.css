@@ -124,3 +124,50 @@ button {
 .refresh {
     display: none;
 }
+
+.chk {
+    margin-top: 4%;
+    margin-bottom: -5%;
+    margin-left: 10%;
+}
+.checkbox-input{
+  display: none;
+}
+.checkbox-parts{
+  color: #000000;
+  padding-left: 5%;
+  position: relative;
+  margin-right: 10%;
+  font-size: 20px;
+  cursor: pointer;
+}
+.checkbox-parts::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+.checkbox-input:checked + .checkbox-parts{
+  color: #009a9a;
+}
+.checkbox-input:checked + .checkbox-parts::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  width: 10%;
+  height: 50%;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #009a9a;
+  border-right: 3px solid #009a9a;
+}
+
+#hide {
+    display: none;
+}
