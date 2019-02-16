@@ -1,0 +1,28 @@
+<div class="chk">
+<label>
+    <input type="checkbox" name="check_subtitle" class="checkbox-input" value=0>
+    <span class="checkbox-parts">副題はありますか？</span>
+  </label>
+  </div>
+<div class="input-form">
+    <a name="book">本</a>
+<%= form_tag(root_path, :method => 'post', id:"book") do %>
+     <div class="input-ind"><label for="title">タイトル</label><%= text_field_tag :title, '', class: 'input-text' %></div>
+     <div class="input-ind" id="hide"><label for="title">副題　　</label><%= text_field_tag :subtitle, '', class: 'input-text' %></div>
+     <div class="input-ind"><label for="name">著者名　</label><%= text_field_tag :name, '', class: 'input-text' %></div>
+     <div class="input-ind"><label for="year">出版年　</label><%= text_field_tag :year, '', class: 'input-text' %></div>
+     <div class="input-ind"><label for="publisher">出版社　</label><%= text_field_tag :publisher, '', class: 'input-text' %></div>
+     <%= button_tag '書誌情報を整形する', class: 'shaping' %>
+ <% end %>
+ 
+ <div class="result-block">
+     <% unless params[:name].nil? %>
+     <% if params[:subtitle].empty? %>
+     <%= text_area_tag :result, @result %>
+     <% else %>
+     <%= text_area_tag :result, @result2 %>
+     <% end %>
+     <%= button_tag 'テキストをコピー', class: 'copy-source' %>
+    <% end %>
+    </div>
+    </div>
