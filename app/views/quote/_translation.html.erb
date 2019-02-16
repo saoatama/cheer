@@ -1,5 +1,6 @@
+<%= form_tag(root_path, :method => 'post') do %>
 <div class="input-form">
-<%= form_tag(quote_translation_path, :method => 'post' ) do %>
+     <a name="trans">翻訳本</a>
      <div class="input-ind"><label for="title">タイトル</label><%= text_field_tag :title, '', class: 'input-text' %></div>
      <div class="input-ind"><label for="title">著者名　</label><%= text_field_tag :author, '', class: 'input-text' %></div>
      <div class="input-ind"><label for="name">訳者名　</label><%= text_field_tag :translator, '', class: 'input-text' %></div>
@@ -10,29 +11,8 @@
  
  <div class="result-block">
      <% unless params[:year].nil? %>
-     <%= text_area_tag :result, @result %>
+     <%= text_area_tag :result, @result4 %>
      <%= button_tag 'テキストをコピー', class: 'copy-source' %>
-     </div>
-     
     <% end %>
- </div>
- 
- 
-<script>
- $('document').ready(()=>{
-  $('.header-title').on('mouseenter', (event)=>{
-   $('.header-description').show();
-   $(this).on('mouseleave', ()=>{
-    $('.header-description').hide();
-   })
-  })
-  $('.go-menu').on('click', (event) => {
-      $('.link-list').toggle();
-  })
-  $('.copy-source').on("click",function(){
- $("textarea").select();
- document.execCommand('copy');
- alert("コピー完了");
-});
- })
-</script>
+    </div>
+</div> 

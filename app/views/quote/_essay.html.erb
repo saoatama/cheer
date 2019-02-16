@@ -1,5 +1,6 @@
+<%= form_tag(root_path, :method => 'post', id:"ess" ) do %>
 <div class="input-form">
-<%= form_tag(quote_essay_path, :method => 'post' ) do %>
+    <a name="ess">論文</a>
     <div class="input-ind"><label for="title">論文の題名</label><%= text_field_tag :essay_title, '', class: 'input-text' %></div>
     <div class="input-ind"><label for="title">筆者の名前</label><%= text_field_tag :essay_author, '', class: 'input-text' %></div>
      <div class="input-ind"><label for="title">本の題名　</label><%= text_field_tag :book_title, '', class: 'input-text' %></div>
@@ -11,29 +12,8 @@
  
  <div class="result-block">
      <% unless params[:year].nil? %>
-     <%= text_area_tag :result, @result %>
+     <%= text_area_tag :result, @result3 %>
      <%= button_tag 'テキストをコピー', class: 'copy-source' %>
-     </div>
-     
     <% end %>
+    </div>
  </div>
- 
- 
-<script>
- $('document').ready(()=>{
-  $('.header-title').on('mouseenter', (event)=>{
-   $('.header-description').show();
-   $(this).on('mouseleave', ()=>{
-    $('.header-description').hide();
-   })
-  })
-  $('.go-menu').on('click', (event) => {
-      $('.link-list').toggle();
-  })
-  $('.copy-source').on("click",function(){
- $("textarea").select();
- document.execCommand('copy');
- alert("コピー完了");
-});
- })
-</script>

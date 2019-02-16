@@ -4,24 +4,21 @@
    <%= select_tag 'choice', options_for_select({'貴方が書きたい書誌情報は？'=>0,'本'=>1,'本に掲載された論文'=>2,'翻訳された本'=>3}), class: 'which' %>
 </div>
 
-<%= button_tag 'ページをリフレッシュ', class: 'refresh' %>
-<div id="render"></div>
-
  <script>
   $('document').ready(function() {
    $('[name=choice]').change(function() {
     var val = $('[name=choice]').val();
     switch(val){
      case '1':
-       window.location.href = 'book'
+       window.location.hash = "book";
       break;
       
      case '2':
-       window.location.href = 'essay'
+       window.location.hash = "ess";
      break;
      
     case '3':
-       window.location.href = 'translation';
+       window.location.hash = "trans";
      break;
     }
 });
