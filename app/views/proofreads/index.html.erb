@@ -1,0 +1,33 @@
+<main>
+<p id="notice"><%= notice %></p>
+
+<h1>Proofreads</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Edited</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @proofreads.each do |proofread| %>
+      <tr>
+        <td><%= proofread.title %></td>
+        <td><%= proofread.content %></td>
+        <td><%= proofread.edited %></td>
+        <td><%= link_to 'Show', proofread %></td>
+        <td><%= link_to 'Edit', edit_proofread_path(proofread) %></td>
+        <td><%= link_to 'Destroy', proofread, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Proofread', new_proofread_path %>
+</main>
