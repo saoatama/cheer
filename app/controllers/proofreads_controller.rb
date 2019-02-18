@@ -25,16 +25,13 @@ class ProofreadsController < ApplicationController
   # POST /proofreads.json
   def create
     @proofread = Proofread.new(proofread_params)
-
-    respond_to do |format|
-      if @proofread.save
-        format.html { redirect_to @proofread, notice: 'Proofread was successfully created.' }
-        format.json { render :show, status: :created, location: @proofread }
-      else
-        format.html { render :new }
-        format.json { render json: @proofread.errors, status: :unprocessable_entity }
-      end
+    @path = "./app/assets/files/#{@proofread.title}.html"
+    File.open(@path, "w") do |f| 
+      f.puts(@proofread.content)
+      f.puts(@proofread.edited)
+      f.close
     end
+    redirect_to proofreads_url
   end
 
   # PATCH/PUT /proofreads/1
