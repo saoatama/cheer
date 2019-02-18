@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :proofreads
   root to: "quote#index"
   post "/" => "quote#index"
   get "cocktail" => "cocktail#index"

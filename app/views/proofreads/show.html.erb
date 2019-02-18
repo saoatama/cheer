@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @proofread.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @proofread.content %>
+</p>
+
+<p>
+  <strong>Edited:</strong>
+  <%= @proofread.edited %>
+</p>
+
+<%= link_to 'Edit', edit_proofread_path(@proofread) %> |
+<%= link_to 'Back', proofreads_path %>
